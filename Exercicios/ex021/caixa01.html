@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo de Caixas</title>
+    <style>
+        h1{
+            /*CRIA O FUNDO CINZA*/
+            background-color: lightgrey; /*cor fundo*/
+            width: 300px; /*largura do fundo*/
+            height: 300px; /*altura do fundo*/
+
+            /*CRIA A BORDA*/
+            border-width: 10px; /*grossura da borda*/
+            border-style: solid; /*tipo de borda*/
+            border-color: darkslategray; /*cor da borda*/
+
+            /*CONFIGURA O PADDING*/
+            padding-top: 10px; /*distância alto*/
+            padding-right: 10px; /*distância direita*/
+            padding-bottom: 10px; /*distância baixo*/
+            padding-left: 10px; /*distância esquerda*/
+
+            /*CONFIGURA A MARGIN*/
+            margin-top: 10px; /*distância alto*/
+            margin-right: auto; /*distância direita*/
+            margin-bottom: 10px; /*distância baixo*/
+            margin-left: auto; /*distância esquerda*/
+
+            /*CRIA A OUTLINE*/
+            outline-width: 10px; /*grossura da outline*/
+            outline-style: dashed; /*tipo de outline*/
+            outline-color: salmon; /*cor da outline*/
+
+            /*SHORTHANDS*/
+
+            /*SHORTHAND BORDA = grossura -> tipo -> cor*/
+            border: 10px solid darkslategray;
+
+            /*SHORTHAND PADDING = alto -> direita -> baixo -> esquerda*/
+            padding: 10px 10px 10px 10px; /*Se todos os nº for igual, basta colocar o nº apenas uma vez*/
+
+            /*SHORTHAND MARGIN = alto -> direita -> baixo -> esquerda*/
+            margin: 10px auto 10px auto; /*Se todos os nº for igual, basta colocar o nº apenas uma vez*/
+
+            /*SHORTHAND OUTLINE = grossura -> tipo -> cor*/
+            outline: 10px dashed salmon;
+        }
+        a{
+            border-width: 10px;
+            border-style: solid;
+            border-color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Exemplo de caixa box-level</h1>
+    <p>Parágrafos também são exemplos de box-level, mas os <a href="#">links são exemplos de caixas inline-level</a>. Vamos ver como tudo isso funciona.</p>
+</body>
+</html>
