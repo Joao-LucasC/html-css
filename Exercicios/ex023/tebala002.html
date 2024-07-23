@@ -8,10 +8,8 @@
         body{
             font-family: Arial, Helvetica, sans-serif;
         }
-        td.num{
-            text-align: right;
-        }
         table{
+            position: relative;
             border-collapse: collapse;
             width: 400px;
         }
@@ -19,9 +17,29 @@
             border: 1px solid black;
             padding: 10px;
         }
+        caption{
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgray;
+        }
         thead, tfoot{
-            background-color: gray;
+            background-color: #383838;
             color: white;
+        }
+        thead > tr > th{
+            position: sticky;
+            top: -1px;
+            background-color: #383838;
+        }
+        tbody > tr:nth-child(odd){ /* 2n-1*/
+            background-color: white;
+        }
+        tbody > tr:nth-child(even){ /* 2n*/
+            background-color: lightgray;
+        }
+        td.num{
+            text-align: right;
         }
     </style>
 </head>
@@ -30,6 +48,7 @@
     <!--
         ANATOMIA PARA TABELAS GRANDES
         TABLE
+            CAPTION
             THEAD
                 TR, TD, TH
             TBODY
@@ -38,10 +57,13 @@
                 TR, TD, TH
     -->
                 <table>
+                    <caption>
+                        População das unidades Federativas
+                    </caption>
                     <thead>
                         <tr>
-                            <th>Estado</th>
-                            <th>População</th>
+                            <th scope="col">Estado</th>
+                            <th scope="col" style="width: 50px;">População</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -156,11 +178,22 @@
                     </tbody>
                     <tfoot>
                         <tr>
-                            <th>Total de Habitantes</th>
+                            <th scope="row">Total de Habitantes</th>
                             <td class="num"><strong>203 062 512</strong></td>
                         </tr>
                     </tfoot>
 
                 </table>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequatur repudiandae nesciunt nam, voluptas libero necessitatibus cum nobis similique maxime quaerat veritatis quae debitis quisquam. Totam odio repudiandae laudantium vero deleniti. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dignissimos consequuntur sunt necessitatibus blanditiis exercitationem! Odio magni eius iste dolores nemo asperiores nihil explicabo exercitationem consequuntur autem. Voluptate nobis perspiciatis beatae. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt debitis eum nisi quod inventore error reprehenderit magni amet illum quae, saepe officia quam ducimus minus soluta natus nostrum obcaecati voluptates? Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, reprehenderit debitis non enim eum aliquid accusamus eius nobis asperiores cum distinctio unde numquam facilis fugit rem corrupti eaque a voluptatem.</p>
+                
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequatur repudiandae nesciunt nam, voluptas libero necessitatibus cum nobis similique maxime quaerat veritatis quae debitis quisquam. Totam odio repudiandae laudantium vero deleniti. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dignissimos consequuntur sunt necessitatibus blanditiis exercitationem! Odio magni eius iste dolores nemo asperiores nihil explicabo exercitationem consequuntur autem. Voluptate nobis perspiciatis beatae. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt debitis eum nisi quod inventore error reprehenderit magni amet illum quae, saepe officia quam ducimus minus soluta natus nostrum obcaecati voluptates? Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, reprehenderit debitis non enim eum aliquid accusamus eius nobis asperiores cum distinctio unde numquam facilis fugit rem corrupti eaque a voluptatem.</p>
+
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequatur repudiandae nesciunt nam, voluptas libero necessitatibus cum nobis similique maxime quaerat veritatis quae debitis quisquam. Totam odio repudiandae laudantium vero deleniti. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dignissimos consequuntur sunt necessitatibus blanditiis exercitationem! Odio magni eius iste dolores nemo asperiores nihil explicabo exercitationem consequuntur autem. Voluptate nobis perspiciatis beatae. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt debitis eum nisi quod inventore error reprehenderit magni amet illum quae, saepe officia quam ducimus minus soluta natus nostrum obcaecati voluptates? Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, reprehenderit debitis non enim eum aliquid accusamus eius nobis asperiores cum distinctio unde numquam facilis fugit rem corrupti eaque a voluptatem.</p>
+
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequatur repudiandae nesciunt nam, voluptas libero necessitatibus cum nobis similique maxime quaerat veritatis quae debitis quisquam. Totam odio repudiandae laudantium vero deleniti. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dignissimos consequuntur sunt necessitatibus blanditiis exercitationem! Odio magni eius iste dolores nemo asperiores nihil explicabo exercitationem consequuntur autem. Voluptate nobis perspiciatis beatae. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt debitis eum nisi quod inventore error reprehenderit magni amet illum quae, saepe officia quam ducimus minus soluta natus nostrum obcaecati voluptates? Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, reprehenderit debitis non enim eum aliquid accusamus eius nobis asperiores cum distinctio unde numquam facilis fugit rem corrupti eaque a voluptatem.</p>
+
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequatur repudiandae nesciunt nam, voluptas libero necessitatibus cum nobis similique maxime quaerat veritatis quae debitis quisquam. Totam odio repudiandae laudantium vero deleniti. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dignissimos consequuntur sunt necessitatibus blanditiis exercitationem! Odio magni eius iste dolores nemo asperiores nihil explicabo exercitationem consequuntur autem. Voluptate nobis perspiciatis beatae. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt debitis eum nisi quod inventore error reprehenderit magni amet illum quae, saepe officia quam ducimus minus soluta natus nostrum obcaecati voluptates? Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, reprehenderit debitis non enim eum aliquid accusamus eius nobis asperiores cum distinctio unde numquam facilis fugit rem corrupti eaque a voluptatem.</p>
+
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequatur repudiandae nesciunt nam, voluptas libero necessitatibus cum nobis similique maxime quaerat veritatis quae debitis quisquam. Totam odio repudiandae laudantium vero deleniti. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dignissimos consequuntur sunt necessitatibus blanditiis exercitationem! Odio magni eius iste dolores nemo asperiores nihil explicabo exercitationem consequuntur autem. Voluptate nobis perspiciatis beatae. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt debitis eum nisi quod inventore error reprehenderit magni amet illum quae, saepe officia quam ducimus minus soluta natus nostrum obcaecati voluptates? Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, reprehenderit debitis non enim eum aliquid accusamus eius nobis asperiores cum distinctio unde numquam facilis fugit rem corrupti eaque a voluptatem.</p>
 </body>
 </html>
